@@ -24,24 +24,27 @@ import org.eclipse.jetty.util.component.AbstractLifeCycle;
 import org.eclipse.jetty.util.log.Log;
 import org.eclipse.jetty.util.log.Logger;
 
-@ManagedObject(value = "Jetty HTTP Servlet server (tweaked for Cobertura)")
+@ManagedObject(value = "Cobertura Coverage Service for Jetty 9.3.x")
 public class CoberturaCoverageService extends AbstractLifeCycle {
 
     private static final Logger LOGGER = Log.getLogger(CoberturaCoverageService.class);
 
     @Override
     protected void doStart() throws Exception {
-        LOGGER.info("Started Cobertura coverage collection service...");
+        LOGGER.info("Starting Cobertura coverage collection service...");
     }
 
     @Override
     protected void doStop() throws Exception {
         LOGGER.info("Saving Cobertura coverage data...");
-        final String className = "net.sourceforge.cobertura.coveragedata.ProjectData";
-        final String methodName = "saveGlobalProjectData";
-        final Class<?> saveClass = Class.forName(className);
-        final java.lang.reflect.Method saveMethod = saveClass.getDeclaredMethod(methodName, new Class[0]);
-        saveMethod.invoke(null, new Object[0]);
+        final String projectDataClassName = "net.sourceforge.cobertura.coveragedata.ProjectData";
+        final String saveGlobalProjectDataMethodName = "saveGlobalProjectData";
+        final Class<?> projectDataClass = Class.forName(projectDataClassName);
+        final java.lang.reflect.Method saveGlobalProjectDataMethod = projectDataClass.getDeclaredMethod(saveGlobalProjectDataMethodName, new Class[0]);
+        saveGlobalProjectDataMethod.invoke(null, new Object[0]);
+        final String turnOffAutoSaveMethodName = "turnOffAutoSave";
+        final java.lang.reflect.Method turnOffAutoSaveMethod = projectDataClass.getDeclaredMethod(turnOffAutoSaveMethodName, new Class[0]);
+        turnOffAutoSaveMethod.invoke(null, new Object[0]);
         LOGGER.info("Stopped Cobertura coverage collection service...");
     }
 
