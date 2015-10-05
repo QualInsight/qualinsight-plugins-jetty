@@ -65,6 +65,7 @@
   </dependencyManagement>
   <packaging>pom</packaging>
   <modules>
+    <module>8.1.x</module>
     <module>9.2.x</module>
     <module>9.3.x</module>
   </modules>
