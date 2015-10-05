@@ -3,7 +3,7 @@
   <parent>
     <groupId>com.qualinsight.plugins.jetty</groupId>
     <artifactId>qualinsight-plugins-jetty</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
   </parent>
   <artifactId>qualinsight-plugins-jetty-9.2.x</artifactId>
   <description>QualInsight plugins for Jetty 9.2.x.</description>
