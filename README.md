@@ -21,4 +21,4 @@ A full usage example is provided on the [``qualinsight-mojo-cobertura-example``]
 
 ## Build status
 
-![Travis build status](https://travis-ci.org/QualInsight/qualinsight-plugin-jetty.svg?branch=master)
+[![Build Status](https://travis-ci.org/QualInsight/qualinsight-plugins-jetty.svg)](https://travis-ci.org/QualInsight/qualinsight-plugins-jetty)
