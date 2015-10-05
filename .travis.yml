@@ -1,9 +1,7 @@
 language: java
  
-# Test several JDK
+# Test only JDK8
 jdk:
-  - oraclejdk7
-  - openjdk7
   - oraclejdk8
 
 # Remove all the bla-bla...
