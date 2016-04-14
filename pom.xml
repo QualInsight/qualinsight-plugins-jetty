@@ -7,7 +7,7 @@
   </parent>
   <groupId>com.qualinsight.plugins.jetty</groupId>
   <artifactId>qualinsight-plugins-jetty</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.3-SNAPSHOT</version>
   <description>QualInsight plugins for Jetty.</description>
   <url>https://github.com/QualInsight/qualinsight-plugins-jetty</url>
   <organization>
@@ -37,7 +37,7 @@
     <connection>scm:git:git@github.com:QualInsight/qualinsight-plugins-jetty.git</connection>
     <developerConnection>scm:git:git@github.com:QualInsight/qualinsight-plugins-jetty.git</developerConnection>
     <url>https://github.com/QualInsight/qualinsight-plugins-jetty.git</url>
-    <tag>qualinsight-plugins-jetty-1.0.2</tag>
+    <tag>HEAD</tag>
   </scm>
   <properties>
     <lib.version.cobertura>2.1.1</lib.version.cobertura>
