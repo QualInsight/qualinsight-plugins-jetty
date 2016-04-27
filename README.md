@@ -22,3 +22,8 @@ A full usage example of the cobertura shutdown hook is provided on the [``qualin
 * Jetty 9.2.13.v20150730
 * Jetty 8.1.17.v20150415
 * Jetty 7.6.17.v20150415
+
+
+## Contributing to the project
+
+If you want to contribute to this project, please have a look at the [developer toolset page](https://github.com/QualInsight/qualinsight-developer-toolset). It provides contribution guidelines I ask you to follow. Thanks in advance for your help !
